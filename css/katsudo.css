@@ -1,0 +1,101 @@
+/* =========================================================
+   katsudo.css
+   第2階層「活動内容」ページ（katsudo.html）専用スタイル
+   ========================================================= */
+
+/* ===== Intro ===== */
+.katsudo-intro .wrap{display:grid; grid-template-columns:1.1fr 0.9fr; gap:32px; align-items:center;}
+.katsudo-intro p{color:var(--gray-text); font-size:14.5px; max-width:42ch;}
+.katsudo-intro-visual{border-radius:20px; overflow:hidden; box-shadow:var(--shadow);}
+
+/* ===== Cycle diagram ===== */
+.cycle-section{padding-top:6px;}
+.cycle-wrap{position:relative; max-width:640px; margin:0 auto 8px; aspect-ratio:640/400;}
+.cycle-svg{position:absolute; inset:0; width:100%; height:100%;}
+.cycle-node{position:absolute; width:190px; text-align:center;}
+.cycle-node.node-top{top:0; left:50%; transform:translateX(-50%);}
+.cycle-node.node-left{top:57%; left:-6px;}
+.cycle-node.node-right{top:57%; right:-6px;}
+.cycle-icon{width:88px; height:88px; border-radius:50%; background:#fff; box-shadow:var(--shadow); border:3px solid; margin:0 auto 10px; display:flex; align-items:center; justify-content:center;}
+.cycle-icon svg{width:36px; height:36px;}
+.cycle-node.is-green .cycle-icon{border-color:var(--green);}
+.cycle-node.is-blue .cycle-icon{border-color:var(--blue);}
+.cycle-node.is-orange .cycle-icon{border-color:var(--orange);}
+.cycle-node h3{font-size:15.5px; margin-bottom:5px;}
+.cycle-node.is-green h3{color:var(--green);}
+.cycle-node.is-blue h3{color:var(--blue);}
+.cycle-node.is-orange h3{color:var(--orange);}
+.cycle-node p{font-size:11.5px; color:var(--gray-text); line-height:1.5;}
+.cycle-center{
+  position:absolute; top:41%; left:50%; transform:translate(-50%,-50%); z-index:3;
+  background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); border-radius:14px;
+  padding:14px 22px; text-align:center; width:200px;
+}
+.cycle-center p{font-size:13.5px; font-weight:700; color:var(--blue-dark); line-height:1.5;}
+
+.cycle-mobile{display:none;}
+
+/* ===== Model business banner ===== */
+.model-banner{background:var(--blue-dark); border-radius:16px; padding:26px 30px; display:flex; align-items:center; gap:24px; color:#fff; margin-top:28px;}
+.model-banner .icon-badge{width:56px; height:56px; border-radius:50%; background:rgba(255,255,255,.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+.model-banner .icon-badge svg{width:28px; height:28px;}
+.model-banner .text{flex:1; min-width:0;}
+.model-banner h3{color:#fff; font-size:17px; margin-bottom:8px;}
+.model-banner .tag{display:inline-block; background:rgba(255,255,255,.15); color:#fff; font-size:11.5px; font-weight:700; padding:4px 12px; border-radius:12px; margin-bottom:8px;}
+.model-banner p.desc{color:#C7D4E3; font-size:13px;}
+.model-banner .illust{width:140px; flex-shrink:0;}
+
+/* ===== Activity detail heading ===== */
+.activity-detail-head{display:flex; align-items:baseline; gap:14px; margin-bottom:26px; border-left:5px solid var(--blue); padding-left:14px;}
+.activity-detail-head h2{font-size:22px;}
+
+/* ===== Activity rows ===== */
+.activity-row{margin-bottom:34px;}
+.activity-row:last-child{margin-bottom:0;}
+.activity-row-head{display:flex; align-items:center; gap:12px; margin-bottom:16px;}
+.activity-row-head .icon-circle{width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+.activity-row-head .icon-circle svg{width:20px; height:20px;}
+.activity-row-head h3{font-size:17.5px;}
+
+.activity-grid{display:grid; grid-template-columns:1fr 1fr auto; gap:16px; align-items:stretch;}
+.activity-item{overflow:hidden; display:flex; flex-direction:column;}
+.activity-item .photo{height:120px; flex-shrink:0;}
+.activity-item .body{padding:16px 18px; flex:1;}
+.activity-item h4{font-size:14.5px; margin-bottom:6px;}
+.activity-item p{font-size:12.5px; color:var(--gray-text);}
+.tag-pills{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
+.tag-pill{display:inline-block; background:var(--bg-soft); color:var(--blue-dark); font-size:11px; font-weight:700; padding:4px 10px; border-radius:10px;}
+
+.activity-more{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; width:88px; text-align:center; margin:0 auto;}
+.activity-more .arrow-btn{width:44px; height:44px; border-radius:50%; background:var(--blue); color:#fff; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s ease;}
+.activity-more .arrow-btn svg{width:18px; height:18px;}
+.activity-more:hover .arrow-btn{background:var(--blue-dark);}
+.activity-more span{font-size:11px; color:var(--gray-text); line-height:1.4;}
+
+/* ===== Final CTA ===== */
+.katsudo-cta{background:var(--bg-soft); text-align:center; padding:44px 0;}
+.katsudo-cta h2{font-size:22px; margin-bottom:20px;}
+.katsudo-cta-actions{display:flex; justify-content:center; gap:14px; flex-wrap:wrap;}
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .katsudo-intro .wrap{grid-template-columns:1fr;}
+  .katsudo-intro-visual{order:-1;}
+
+  .cycle-wrap{display:none;}
+  .cycle-mobile{display:flex; flex-direction:column; align-items:center; gap:6px; max-width:360px; margin:0 auto;}
+  .cycle-mobile .cycle-node{position:static; transform:none; width:100%;}
+  .cycle-mobile .cycle-center{position:static; transform:none; width:100%; margin:2px 0;}
+  .cycle-mobile .cycle-arrow{width:22px; height:22px; color:var(--blue-dark); opacity:.5;}
+
+  .model-banner{flex-direction:column; text-align:center;}
+  .model-banner .illust{width:110px;}
+
+  .activity-grid{grid-template-columns:1fr 1fr;}
+  .activity-more{grid-column:1 / -1; flex-direction:row; width:auto; margin-top:4px;}
+}
+@media (max-width:600px){
+  .activity-grid{grid-template-columns:1fr;}
+  .activity-more{grid-column:auto;}
+  .katsudo-cta-actions{flex-direction:column; align-items:stretch;}
+}
