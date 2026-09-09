@@ -39,8 +39,7 @@ nav.main-nav a{font-size:13.5px; color:#33394A; font-weight:500; position:relati
 nav.main-nav a::after{content:''; position:absolute; left:0; right:0; bottom:-2px; height:2px; background:var(--blue); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;}
 nav.main-nav a:hover::after, nav.main-nav a.active::after{transform:scaleX(1);}
 nav.main-nav a.active{color:var(--blue);}
-.header-cta{display:flex; align-items:center; gap:16px;}
-.header-cta .plain-link{font-size:12.5px; color:var(--gray-text);}
+.header-cta{display:flex; align-items:center; gap:10px;}
 .menu-toggle{display:none; background:none; border:none; cursor:pointer; padding:8px;}
 .menu-toggle span{display:block; width:22px; height:2px; background:#2A303C; margin:5px 0;}
 
@@ -80,18 +79,14 @@ section{padding:40px 0;}
 .page-header h1{font-size:30px; font-weight:900;}
 
 /* ===== Footer ===== */
-footer{background:var(--blue-dark); color:#C7D4E3; padding:40px 0 20px; font-size:13px;}
-.footer-grid{display:grid; grid-template-columns:1.4fr repeat(4,1fr); gap:24px; padding-bottom:24px; border-bottom:1px solid rgba(255,255,255,.15);}
-footer h4{color:#fff; font-size:13px; margin-bottom:12px; font-weight:700;}
-footer ul li{margin-bottom:10px;}
+footer{background:var(--blue-dark); color:#C7D4E3; padding:28px 0 20px; font-size:13px;}
+.footer-links{display:flex; flex-wrap:wrap; gap:10px 28px; padding-bottom:18px; margin-bottom:16px; border-bottom:1px solid rgba(255,255,255,.15);}
 footer a:hover{color:#fff;}
-.footer-brand{color:#fff; font-size:15px; font-weight:700; margin-bottom:14px;}
-.footer-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:22px; flex-wrap:wrap; gap:12px; color:#8FA0B8; font-size:11.5px;}
+.footer-bottom{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; color:#8FA0B8; font-size:11.5px;}
 
 @media (max-width:900px){
   nav.main-nav, .header-cta{display:none;}
   .menu-toggle{display:block;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
   section{padding:36px 0;}
   .section-head .see-all{position:static; display:block; margin-top:10px;}
 }
