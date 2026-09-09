@@ -1,7 +1,0 @@
-{
-  "name": "odakyu-site",
-  "private": true,
-  "scripts": {
-    "build": "node build.js"
-  }
-}
