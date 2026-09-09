@@ -53,12 +53,12 @@
 /* ===== Activity rows ===== */
 .activity-row{margin-bottom:24px;}
 .activity-row:last-child{margin-bottom:0;}
-.activity-row-head{display:flex; align-items:center; gap:12px; margin-bottom:12px;}
-.activity-row-head .icon-circle{width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
-.activity-row-head .icon-circle svg{width:20px; height:20px;}
-.activity-row-head h3{font-size:17.5px;}
 
-.activity-grid{display:grid; grid-template-columns:1fr 1fr auto; gap:16px; align-items:stretch;}
+.activity-grid{display:grid; grid-template-columns:140px 1fr 1fr auto; gap:16px; align-items:stretch;}
+.activity-label{display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:10px;}
+.activity-label .icon-circle{width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+.activity-label .icon-circle svg{width:20px; height:20px;}
+.activity-label h3{font-size:16.5px;}
 .activity-item{overflow:hidden; display:flex; flex-direction:column;}
 .activity-item .photo{height:100px; flex-shrink:0;}
 .activity-item .body{padding:14px 16px; flex:1;}
@@ -93,10 +93,12 @@
   .model-banner .illust{width:110px;}
 
   .activity-grid{grid-template-columns:1fr 1fr;}
+  .activity-label{grid-column:1 / -1; flex-direction:row; align-items:center; margin-bottom:4px;}
   .activity-more{grid-column:1 / -1; flex-direction:row; width:auto; margin-top:4px;}
 }
 @media (max-width:600px){
   .activity-grid{grid-template-columns:1fr;}
+  .activity-label{grid-column:auto;}
   .activity-more{grid-column:auto;}
   .katsudo-cta-actions{flex-direction:column; align-items:stretch;}
 }
