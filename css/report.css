@@ -1,0 +1,35 @@
+/* =========================================================
+   report.css
+   活動紹介 詳細ページ（活動内容・実績からリンクする個別記事）専用スタイル
+   ========================================================= */
+
+/* ===== Meta ===== */
+.report-meta{padding-top:0; padding-bottom:8px;}
+.report-meta .wrap{display:flex; align-items:center; gap:12px;}
+.report-meta .record-tag{display:inline-block; font-size:11px; font-weight:700; padding:5px 14px; border-radius:12px; background:var(--blue-soft); color:var(--blue);}
+.report-meta time{font-size:13px; color:var(--gray-text); font-weight:700;}
+
+/* ===== Gallery ===== */
+.report-gallery{padding-top:0;}
+.report-gallery-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+.report-gallery-grid figure{margin:0; border-radius:16px; overflow:hidden; box-shadow:var(--shadow);}
+.report-gallery-grid img{display:block; width:100%; height:260px; object-fit:cover;}
+
+/* ===== Body ===== */
+.report-body{padding-top:8px;}
+.report-content{max-width:76ch; margin:0 auto;}
+.report-content p{font-size:14.5px; color:#2A303C; margin-bottom:20px;}
+.report-content p:last-child{margin-bottom:0;}
+
+/* ===== CTA ===== */
+.report-cta{background:var(--bg-soft); text-align:center; padding:32px 0;}
+.report-cta-actions{display:flex; justify-content:center; gap:14px; flex-wrap:wrap;}
+
+/* ===== Responsive ===== */
+@media (max-width:700px){
+  .report-gallery-grid{grid-template-columns:1fr;}
+  .report-gallery-grid img{height:220px;}
+}
+@media (max-width:600px){
+  .report-cta-actions{flex-direction:column; align-items:stretch;}
+}
