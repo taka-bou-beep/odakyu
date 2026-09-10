@@ -23,10 +23,10 @@
 .katsudo-hero-text{position:absolute; top:0; left:0; max-width:300px; z-index:2;}
 .katsudo-hero-text h1{font-size:30px; font-weight:900; margin-bottom:14px;}
 .katsudo-hero-text p{color:var(--gray-text); font-size:13.5px; line-height:1.9;}
-.cycle-diagram-img{display:block; width:100%; max-width:1000px; height:auto; margin:0 auto;}
+.cycle-diagram-img{display:block; width:100%; max-width:750px; height:auto; margin:0 auto;}
 
 /* ===== Model business banner ===== */
-.model-banner{background:var(--blue-dark); border-radius:16px; padding:18px 26px; display:flex; align-items:center; gap:20px; color:#fff; margin-top:0;}
+.model-banner{background:var(--blue-dark); border-radius:16px; padding:18px 26px; display:flex; align-items:center; gap:20px; color:#fff; margin-top:28px;}
 .model-banner .icon-badge{width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
 .model-banner .icon-badge svg{width:24px; height:24px;}
 .model-banner .text{flex:1; min-width:0;}
@@ -84,7 +84,7 @@
 /* ===== Responsive ===== */
 @media (max-width:900px){
   .katsudo-hero-text{position:static; max-width:none; margin-bottom:18px; text-align:center;}
-  .cycle-diagram-img{max-width:420px;}
+  .cycle-diagram-img{max-width:336px;}
 
   .model-banner{flex-direction:column; text-align:center;}
   .model-banner .illust{width:110px;}
