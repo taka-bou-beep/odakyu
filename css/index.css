@@ -77,8 +77,8 @@
 .results-slider:hover .results-slider-track{animation-play-state:paused;}
 .results-slider-track img{display:block; height:220px; width:auto; border-radius:14px; box-shadow:var(--shadow); flex-shrink:0;}
 @keyframes resultsScroll{
-  0%{transform:translateX(-50%);}
-  100%{transform:translateX(0);}
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
 }
 .results-cta{text-align:center;}
 
