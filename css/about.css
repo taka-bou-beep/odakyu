@@ -7,7 +7,7 @@
 .about-hero{
   position:relative; overflow:hidden; min-height:420px;
   display:flex; align-items:flex-start; justify-content:center; text-align:center;
-  background:url('../images/about-hero-bg.jpg') center 40%/cover no-repeat;
+  background:url('../images/about-hero-bg.jpg') center 65%/cover no-repeat;
   padding:64px 20px 40px;
 }
 .about-hero-content{position:relative; z-index:1; max-width:720px;}
