@@ -81,21 +81,21 @@
 }
 .results-cta{text-align:center;}
 
-/* ===== Bottom 3-col ===== */
-.bottom-grid{display:grid; grid-template-columns:1.1fr 0.9fr 0.9fr; gap:20px; align-items:stretch;}
+/* ===== Bottom 2-col ===== */
+.bottom-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:20px; align-items:stretch;}
+.list-block{padding-top:10px;}
 .list-block h3{font-size:15.5px; margin-bottom:18px; display:flex; justify-content:space-between; align-items:baseline;}
 .list-block h3 a{font-size:11.5px; color:var(--blue); font-weight:700;}
 .news-item{display:flex; gap:14px; align-items:baseline; padding:14px 0; border-bottom:1px solid var(--line); font-size:13px;}
-.news-item time{color:var(--gray-text); font-size:11.5px; flex-shrink:0; width:80px;}
+.news-item time{color:var(--gray-text); font-size:11.5px; flex-shrink:0; width:60px;}
 .news-item .cat{display:inline-block; font-size:10px; padding:2px 9px; border-radius:12px; background:var(--blue-soft); color:var(--blue); margin-right:8px; font-weight:700;}
-.pub-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
-.pub-card{border-radius:12px; padding:14px; text-align:center; box-shadow:var(--shadow);}
-.pub-thumb{height:76px; background:var(--bg-soft); border-radius:8px; margin-bottom:8px; display:flex; align-items:center; justify-content:center; color:var(--blue);}
-.pub-card p{font-size:11.5px; color:#2A303C; font-weight:500;}
+.news-item .cat.is-orange{background:var(--orange-soft); color:var(--orange);}
+.news-item .cat.is-green{background:var(--green-soft); color:var(--green);}
 .cta-panel{background:var(--orange-soft); border-radius:16px; padding:20px 20px; display:flex; flex-direction:column; align-items:flex-start; gap:12px; height:100%;}
 .cta-panel h3{font-size:16px;}
 .cta-panel p{font-size:12.5px; color:var(--gray-text); flex:1;}
-.cta-illust{width:100%; height:70px; border-radius:10px; background:linear-gradient(135deg,#FBEBD6,#F4D6A8); margin-bottom:4px;}
+.cta-icon{width:48px; height:48px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center;}
+.cta-icon svg{width:24px; height:24px;}
 
 @media (max-width:900px){
   .highlight-inner{grid-template-columns:1fr;}
@@ -115,5 +115,4 @@
 }
 @media (max-width:520px){
   .partners-grid{grid-template-columns:1fr 1fr;}
-  .pub-grid{grid-template-columns:1fr;}
 }
