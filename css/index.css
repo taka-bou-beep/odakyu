@@ -94,8 +94,7 @@
 .cta-panel{background:var(--orange-soft); border-radius:16px; padding:20px 20px; display:flex; flex-direction:column; align-items:flex-start; gap:12px; height:100%;}
 .cta-panel h3{font-size:16px;}
 .cta-panel p{font-size:12.5px; color:var(--gray-text); flex:1;}
-.cta-icon{width:48px; height:48px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center;}
-.cta-icon svg{width:24px; height:24px;}
+.cta-illust-img{width:100%; max-width:220px; height:auto; display:block; margin:0 auto;}
 
 @media (max-width:900px){
   .highlight-inner{grid-template-columns:1fr;}
