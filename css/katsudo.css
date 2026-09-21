@@ -23,7 +23,7 @@
 .katsudo-hero-text{position:absolute; top:0; left:0; max-width:300px; z-index:2;}
 .katsudo-hero-text h1{font-size:30px; font-weight:900; margin-bottom:14px;}
 .katsudo-hero-text p{color:var(--gray-text); font-size:13.5px; line-height:1.9;}
-.cycle-diagram-img{display:block; width:100%; max-width:750px; height:auto; margin:0 auto;}
+.cycle-diagram-img{display:block; width:100%; max-width:638px; height:auto; margin:0 auto;}
 
 /* ===== Model business banner ===== */
 .model-banner{background:var(--blue-dark); border-radius:16px; padding:18px 26px; display:flex; align-items:center; gap:20px; color:#fff; margin-top:28px;}
@@ -88,7 +88,7 @@
 /* ===== Responsive ===== */
 @media (max-width:900px){
   .katsudo-hero-text{position:static; max-width:none; margin-bottom:18px; text-align:center;}
-  .cycle-diagram-img{max-width:336px;}
+  .cycle-diagram-img{max-width:286px;}
 
   .model-banner{flex-direction:column; text-align:center;}
   .model-banner .illust{width:110px;}
