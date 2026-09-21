@@ -59,10 +59,6 @@
 .activity-row.is-orange .activity-label h3{color:var(--orange);}
 .activity-label p{font-size:12px; color:var(--gray-text); line-height:1.6;}
 
-.activity-more-link{display:flex; justify-content:flex-end; align-items:center; gap:4px; margin-bottom:6px; font-size:11.5px; color:var(--blue); font-weight:700;}
-.activity-more-link svg{width:14px; height:14px;}
-.activity-more-link:hover{color:var(--blue-dark);}
-
 .activity-photos{flex:1; min-width:0; display:grid; grid-template-columns:1fr 1fr; gap:18px;}
 .activity-photo-card{background:#fff; border-radius:14px; box-shadow:var(--shadow); display:flex; flex-direction:column; overflow:visible;}
 .activity-photo-card .photo{position:relative; height:92px; flex-shrink:0; border-radius:14px 14px 0 0; overflow:hidden;}
@@ -77,9 +73,10 @@
 .tag-pill{display:inline-block; background:var(--bg-soft); color:var(--blue-dark); font-size:11px; font-weight:700; padding:4px 10px; border-radius:10px;}
 
 .activity-feature{display:flex; align-items:stretch; gap:20px;}
-.activity-feature-photos{flex:1; min-width:0; display:flex; border-radius:14px; overflow:hidden; box-shadow:var(--shadow);}
+.activity-feature-card{flex:1; min-width:0; display:flex; background:#fff; border-radius:14px; box-shadow:var(--shadow); overflow:hidden;}
+.activity-feature-photos{flex:1; min-width:0; display:flex;}
 .activity-feature-photos img{flex:1; width:50%; min-height:190px; object-fit:cover; display:block;}
-.activity-feature-panel{width:260px; flex-shrink:0; background:#fff; border-radius:14px; box-shadow:var(--shadow); padding:20px 22px;}
+.activity-feature-panel{width:260px; flex-shrink:0; padding:20px 22px; display:flex; flex-direction:column; justify-content:center;}
 .activity-feature-panel h4{font-size:14.5px; margin-bottom:6px; color:var(--blue-dark);}
 .activity-feature-panel p{font-size:12px; color:var(--gray-text); line-height:1.6;}
 
@@ -100,6 +97,7 @@
   .activity-label{width:auto;}
 
   .activity-feature{flex-direction:column;}
+  .activity-feature-card{flex-direction:column;}
   .activity-feature-photos img{min-height:160px;}
   .activity-feature-panel{width:auto;}
 }
