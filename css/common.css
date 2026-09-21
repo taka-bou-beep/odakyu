@@ -32,8 +32,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--orange); outline-o
 /* ===== Header ===== */
 header{position:sticky; top:0; z-index:100; background:rgba(255,255,255,0.96); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
 .header-inner{max-width:1180px; margin:0 auto; padding:0 32px; display:flex; align-items:center; justify-content:space-between; height:74px;}
-.brand{display:flex; align-items:center; gap:10px; font-size:15px; color:var(--blue-dark); font-weight:700;}
-.brand-mark{width:36px; height:36px; flex-shrink:0;}
+.brand{display:flex; align-items:center; gap:10px; font-size:18px; color:var(--blue-dark); font-weight:700;}
 nav.main-nav{display:flex; align-items:center; gap:30px;}
 nav.main-nav a{font-size:13.5px; color:#33394A; font-weight:500; position:relative; padding:4px 0;}
 nav.main-nav a::after{content:''; position:absolute; left:0; right:0; bottom:-2px; height:2px; background:var(--blue); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;}

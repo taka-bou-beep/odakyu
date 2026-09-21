@@ -12,8 +12,6 @@
 .hero-copy{grid-area:copy;}
 .hero-actions{grid-area:actions; align-self:start;}
 .hero-visual{grid-area:visual;}
-.badge-award{display:inline-flex; align-items:center; gap:8px; background:var(--green-soft); color:var(--green); font-size:12.5px; font-weight:700; padding:7px 16px; border-radius:20px; margin-bottom:16px;}
-.badge-award .dot{width:6px; height:6px; background:var(--green); border-radius:50%;}
 .hero h1{font-size:36px; font-weight:900; margin-bottom:14px;}
 .hero h1 .line2{display:block; font-size:21px; color:var(--blue); font-weight:700; margin-top:6px;}
 .hero .lead{font-size:15px; color:var(--gray-text); max-width:44ch; margin-bottom:22px;}
@@ -29,7 +27,7 @@
   -webkit-mask-image:linear-gradient(to right, transparent 0%, #000 48%);
   mask-image:linear-gradient(to right, transparent 0%, #000 48%);
 }
-.award-seal{position:absolute; top:-10px; right:-6px; width:100px; z-index:2;}
+.award-seal{position:absolute; top:-10px; right:-6px; width:120px; z-index:2;}
 .award-seal img{display:block; width:100%; height:auto; filter:drop-shadow(0 8px 20px rgba(18,59,107,0.18));}
 
 /* ===== Partners ===== */
@@ -46,12 +44,12 @@
   background:var(--green-soft); border-radius:12px; padding:12px 20px; font-size:13px; color:var(--blue-dark);
 }
 .area-strip strong{font-weight:700;}
-.area-strip a{color:var(--green); font-weight:700;}
 
 /* ===== Programs ===== */
 .programs-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:14px;}
 .program-card{display:flex; flex-wrap:wrap; overflow:hidden;}
-.program-photo{flex:1 1 110px; min-height:130px;}
+.program-photo{flex:1 1 110px; min-height:130px; overflow:hidden;}
+.program-photo img{display:block; width:100%; height:100%; object-fit:cover;}
 .program-text{padding:16px 18px; flex:3 1 200px; min-width:0;}
 .program-icon-badge{width:40px; height:40px; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:8px;}
 .program-icon-badge svg{width:22px; height:22px;}
