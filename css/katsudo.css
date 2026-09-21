@@ -76,6 +76,13 @@
 .tag-pills{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
 .tag-pill{display:inline-block; background:var(--bg-soft); color:var(--blue-dark); font-size:11px; font-weight:700; padding:4px 10px; border-radius:10px;}
 
+.activity-feature{display:flex; align-items:stretch; gap:20px;}
+.activity-feature-photos{flex:1; min-width:0; display:flex; border-radius:14px; overflow:hidden; box-shadow:var(--shadow);}
+.activity-feature-photos img{flex:1; width:50%; min-height:190px; object-fit:cover; display:block;}
+.activity-feature-panel{width:260px; flex-shrink:0; background:#fff; border-radius:14px; box-shadow:var(--shadow); padding:20px 22px;}
+.activity-feature-panel h4{font-size:14.5px; margin-bottom:6px; color:var(--blue-dark);}
+.activity-feature-panel p{font-size:12px; color:var(--gray-text); line-height:1.6;}
+
 /* ===== Final CTA ===== */
 .katsudo-cta{background:var(--bg-soft); text-align:center; padding:32px 0;}
 .katsudo-cta h2{font-size:22px; margin-bottom:16px;}
@@ -91,6 +98,10 @@
 
   .activity-row-body{flex-direction:column;}
   .activity-label{width:auto;}
+
+  .activity-feature{flex-direction:column;}
+  .activity-feature-photos img{min-height:160px;}
+  .activity-feature-panel{width:auto;}
 }
 @media (max-width:600px){
   .activity-photos{grid-template-columns:1fr;}
