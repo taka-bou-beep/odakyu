@@ -6,9 +6,9 @@
 /* ===== Hero ===== */
 .about-hero{
   position:relative; overflow:hidden; min-height:420px;
-  display:flex; align-items:center; justify-content:center; text-align:center;
-  background:url('../images/about-hero-bg.jpg') center 78%/cover no-repeat;
-  padding:40px 20px;
+  display:flex; align-items:flex-start; justify-content:center; text-align:center;
+  background:url('../images/about-hero-bg.jpg') center 40%/cover no-repeat;
+  padding:64px 20px 40px;
 }
 .about-hero-content{position:relative; z-index:1; max-width:720px;}
 .about-hero h1{color:#fff; font-size:34px; font-weight:900; margin-bottom:16px; text-shadow:0 2px 16px rgba(0,0,0,.18);}
@@ -45,7 +45,7 @@
 .about-cycle{padding:44px 0;}
 .about-cycle-text{max-width:70ch; margin:0 auto 28px; text-align:center;}
 .about-cycle-text p{font-size:14.5px; color:var(--gray-text); line-height:1.9;}
-.cycle-panel{background:#fff; border:1px solid var(--line); border-radius:24px; padding:36px 30px; text-align:center;}
+.cycle-panel{background:#fff; border-radius:24px; padding:36px 30px; text-align:center;}
 .cycle-panel img{max-width:640px; width:100%; height:auto; margin:0 auto; display:block;}
 
 /* ===== Closing message ===== */
