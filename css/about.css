@@ -4,22 +4,19 @@
    ========================================================= */
 
 /* ===== Hero ===== */
-.about-hero{position:relative; overflow:hidden; padding:56px 0;}
-.about-hero::before{
-  content:''; position:absolute; inset:0;
+.about-hero{
+  position:relative; overflow:hidden; min-height:420px;
+  display:flex; align-items:center; justify-content:center; text-align:center;
   background:url('../images/about-hero-bg.jpg') center 78%/cover no-repeat;
-  opacity:.55; z-index:0;
+  padding:40px 20px;
 }
-.about-hero::after{
-  content:''; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(255,255,255,.65) 0%, rgba(255,255,255,.92) 75%);
-  z-index:0;
-}
-.about-hero .wrap{position:relative; z-index:1;}
-.about-hero-content{max-width:640px;}
-.about-hero h1{font-size:32px; font-weight:900; margin-bottom:12px;}
-.about-hero .lead{font-size:18px; font-weight:700; color:var(--blue); margin-bottom:14px;}
-.about-hero p{font-size:14.5px; color:var(--gray-text); line-height:1.9;}
+.about-hero-content{position:relative; z-index:1; max-width:720px;}
+.about-hero h1{color:#fff; font-size:34px; font-weight:900; margin-bottom:16px; text-shadow:0 2px 16px rgba(0,0,0,.18);}
+.about-hero .lead{color:#1E6B74; font-size:20px; font-weight:700; text-shadow:0 1px 10px rgba(255,255,255,.4);}
+
+/* ===== Intro ===== */
+.about-intro{padding:32px 0 8px; text-align:center;}
+.about-intro p{max-width:70ch; margin:0 auto; font-size:14.5px; color:var(--gray-text); line-height:1.9;}
 
 /* ===== Purpose ===== */
 .about-purpose{padding:44px 0 8px;}
@@ -39,24 +36,23 @@
 /* ===== Three directions ===== */
 .about-directions{padding:44px 0;}
 .direction-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;}
-.direction-card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:26px 22px; box-shadow:var(--shadow);}
-.direction-card .icon-badge{width:48px; height:48px; border-radius:14px; display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
-.direction-card .icon-badge svg{width:24px; height:24px;}
+.direction-card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:30px 22px; box-shadow:var(--shadow); text-align:center;}
+.direction-card .direction-icon{width:72px; height:72px; margin:0 auto 16px; display:block;}
 .direction-card h3{font-size:16px; margin-bottom:8px;}
-.direction-card p{font-size:13px; color:var(--gray-text); line-height:1.8;}
+.direction-card p{font-size:13px; color:var(--gray-text); line-height:1.8; text-align:left;}
 
 /* ===== Cycle ===== */
 .about-cycle{padding:44px 0;}
 .about-cycle-text{max-width:70ch; margin:0 auto 28px; text-align:center;}
 .about-cycle-text p{font-size:14.5px; color:var(--gray-text); line-height:1.9;}
-.cycle-panel{background:#fff; border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow); padding:36px 30px; text-align:center;}
+.cycle-panel{background:#fff; border:1px solid var(--line); border-radius:24px; padding:36px 30px; text-align:center;}
 .cycle-panel img{max-width:640px; width:100%; height:auto; margin:0 auto; display:block;}
 
 /* ===== Closing message ===== */
 .about-message{background:var(--bg-soft); text-align:center; padding:44px 0;}
 .about-message h2{font-size:22px; margin-bottom:18px;}
-.about-message-steps{display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-bottom:18px;}
-.about-message-steps span{background:#fff; border:1px solid var(--line); border-radius:20px; padding:8px 18px; font-size:13px; font-weight:700; color:var(--blue-dark);}
+.about-message-steps{display:flex; justify-content:center; flex-wrap:wrap; gap:14px; margin-bottom:20px;}
+.about-message-steps span{background:#fff; border:1px solid var(--line); border-radius:24px; padding:14px 28px; font-size:17px; font-weight:900; color:var(--blue-dark); box-shadow:var(--shadow);}
 .about-message p{color:var(--gray-text); font-size:13.5px; max-width:64ch; margin:0 auto 24px;}
 .about-message-actions{display:flex; justify-content:center; gap:14px; flex-wrap:wrap;}
 
@@ -64,8 +60,11 @@
 @media (max-width:900px){
   .direction-grid{grid-template-columns:1fr;}
   .about-hero h1{font-size:26px;}
+  .about-hero .lead{font-size:17px;}
+  .about-orgs{grid-template-columns:repeat(2,1fr); display:grid;}
 }
 @media (max-width:600px){
-  .about-org{width:100%; max-width:220px;}
+  .about-org{width:auto; max-width:none;}
+  .about-message-steps{flex-direction:column; align-items:center;}
   .about-message-actions{flex-direction:column; align-items:stretch;}
 }
