@@ -27,7 +27,7 @@
   -webkit-mask-image:linear-gradient(to right, transparent 0%, #000 48%);
   mask-image:linear-gradient(to right, transparent 0%, #000 48%);
 }
-.award-seal{position:absolute; top:-10px; right:-6px; width:120px; z-index:2;}
+.award-seal{position:absolute; top:-10px; right:-6px; width:132px; z-index:2;}
 .award-seal img{display:block; width:100%; height:auto; filter:drop-shadow(0 8px 20px rgba(18,59,107,0.18));}
 
 /* ===== Partners ===== */
