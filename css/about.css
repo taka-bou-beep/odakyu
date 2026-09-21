@@ -1,0 +1,71 @@
+/* =========================================================
+   about.css
+   第2階層「私たちが目指すもの」ページ（about.html）専用スタイル
+   ========================================================= */
+
+/* ===== Hero ===== */
+.about-hero{position:relative; overflow:hidden; padding:56px 0;}
+.about-hero::before{
+  content:''; position:absolute; inset:0;
+  background:url('../images/about-hero-bg.jpg') center 78%/cover no-repeat;
+  opacity:.55; z-index:0;
+}
+.about-hero::after{
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(255,255,255,.65) 0%, rgba(255,255,255,.92) 75%);
+  z-index:0;
+}
+.about-hero .wrap{position:relative; z-index:1;}
+.about-hero-content{max-width:640px;}
+.about-hero h1{font-size:32px; font-weight:900; margin-bottom:12px;}
+.about-hero .lead{font-size:18px; font-weight:700; color:var(--blue); margin-bottom:14px;}
+.about-hero p{font-size:14.5px; color:var(--gray-text); line-height:1.9;}
+
+/* ===== Purpose ===== */
+.about-purpose{padding:44px 0 8px;}
+.about-purpose-text{max-width:70ch; margin:0 auto 30px; text-align:center;}
+.about-purpose-text p{font-size:14.5px; color:var(--gray-text); line-height:1.9; margin-bottom:12px;}
+.about-purpose-text p:last-child{margin-bottom:0;}
+.about-orgs{display:flex; flex-wrap:wrap; justify-content:center; gap:14px;}
+.about-org{
+  display:flex; flex-direction:column; align-items:center; gap:8px; width:150px;
+  background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 10px;
+  box-shadow:var(--shadow); text-align:center; transition:box-shadow .2s, transform .2s;
+}
+.about-org:hover{box-shadow:0 12px 28px rgba(18,59,107,0.14); transform:translateY(-2px);}
+.about-org img{height:34px; width:100%; object-fit:contain;}
+.about-org span{font-size:11.5px; font-weight:700; color:#2A303C;}
+
+/* ===== Three directions ===== */
+.about-directions{padding:44px 0;}
+.direction-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;}
+.direction-card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:26px 22px; box-shadow:var(--shadow);}
+.direction-card .icon-badge{width:48px; height:48px; border-radius:14px; display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+.direction-card .icon-badge svg{width:24px; height:24px;}
+.direction-card h3{font-size:16px; margin-bottom:8px;}
+.direction-card p{font-size:13px; color:var(--gray-text); line-height:1.8;}
+
+/* ===== Cycle ===== */
+.about-cycle{padding:44px 0;}
+.about-cycle-text{max-width:70ch; margin:0 auto 28px; text-align:center;}
+.about-cycle-text p{font-size:14.5px; color:var(--gray-text); line-height:1.9;}
+.cycle-panel{background:#fff; border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow); padding:36px 30px; text-align:center;}
+.cycle-panel img{max-width:640px; width:100%; height:auto; margin:0 auto; display:block;}
+
+/* ===== Closing message ===== */
+.about-message{background:var(--bg-soft); text-align:center; padding:44px 0;}
+.about-message h2{font-size:22px; margin-bottom:18px;}
+.about-message-steps{display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-bottom:18px;}
+.about-message-steps span{background:#fff; border:1px solid var(--line); border-radius:20px; padding:8px 18px; font-size:13px; font-weight:700; color:var(--blue-dark);}
+.about-message p{color:var(--gray-text); font-size:13.5px; max-width:64ch; margin:0 auto 24px;}
+.about-message-actions{display:flex; justify-content:center; gap:14px; flex-wrap:wrap;}
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .direction-grid{grid-template-columns:1fr;}
+  .about-hero h1{font-size:26px;}
+}
+@media (max-width:600px){
+  .about-org{width:100%; max-width:220px;}
+  .about-message-actions{flex-direction:column; align-items:stretch;}
+}
