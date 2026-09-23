@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>A1ポスター｜小田急沿線既存住宅流通促進協議会</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   A1縦ポスター（仕上がり 594×841mm ＋ 塗り足し各3mm = 600×847mm）
+   文字・図版は仕上がり線から内側 20mm 以上に配置
+   ========================================================= */
+@page{size:600mm 847mm; margin:0;}
+:root{
+  --blue-dark:#123B6B;
+  --blue:#1D6FBD;
+  --blue-soft:#EAF3FC;
+  --green:#4CA750;
+  --green-soft:#EAF7EA;
+  --orange:#F0902E;
+  --orange-soft:#FDF0DF;
+  --purple:#7A6FCB;
+  --purple-soft:#E7E4F4;
+  --gray-text:#5B6270;
+  --line:#D9E1EB;
+  --bleed:3mm;
+  --margin:20mm;
+  --pad:calc(var(--bleed) + var(--margin));
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html,body{width:600mm; height:847mm;}
+body{
+  font-family:'Noto Sans JP', sans-serif; color:#2A303C; background:#fff;
+  font-size:23pt; line-height:1.6; font-feature-settings:"palt";
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+img{display:block; max-width:100%;}
+h2,h3,h4{color:var(--blue-dark); line-height:1.35;}
+strong{color:var(--blue-dark);}
+
+/* ---------- Header ---------- */
+.head{
+  flex:none; position:relative; background:var(--blue-dark); color:#fff;
+  padding:calc(var(--bleed) + 17mm) var(--pad) 14mm;
+  overflow:hidden;
+}
+.head::after{ /* 沿線をイメージした帯 */
+  content:''; position:absolute; left:0; right:0; bottom:0; height:5mm;
+  background:linear-gradient(90deg, var(--blue) 0 40%, var(--green) 40% 70%, var(--orange) 70% 100%);
+}
+.head .eyebrow{display:inline-block; font-size:22pt; font-weight:700; letter-spacing:.12em; color:var(--blue-dark); background:#fff; padding:1.5mm 6mm; border-radius:2mm;}
+.head h1{font-size:108pt; font-weight:900; line-height:1.15; margin-top:6mm; letter-spacing:.02em;}
+.head .sub{font-size:40pt; font-weight:700; margin-top:2mm; color:#CFE3F7;}
+.head .theme{font-size:24pt; margin-top:6mm; padding-top:5mm; border-top:1px solid rgba(255,255,255,.35); max-width:430mm; line-height:1.55;}
+.head .org{font-size:28pt; font-weight:700; margin-top:3mm;}
+.head .badge{position:absolute; right:var(--pad); top:calc(var(--bleed) + 14mm); width:100mm; background:#fff; border-radius:50%; padding:4mm;}
+
+/* ---------- Body ---------- */
+.body{flex:1; min-height:0; padding:11mm var(--pad) 0; display:flex; flex-direction:column; justify-content:space-between;}
+.row{display:grid; gap:12mm;}
+.sec-title{display:flex; align-items:center; gap:5mm; font-size:34pt; font-weight:900; color:var(--blue-dark); margin-bottom:4.5mm; line-height:1.2;}
+.sec-title .no{flex:none; width:17mm; height:17mm; border-radius:50%; background:var(--blue); color:#fff; font-size:25pt; display:flex; align-items:center; justify-content:center;}
+.sec-title .en{font-size:17pt; font-weight:700; color:var(--blue); letter-spacing:.1em; margin-left:auto;}
+.box{background:#F5F8FB; border-radius:5mm; padding:6mm 8mm;}
+
+/* 1. 背景と課題 */
+.issues{display:flex; flex-direction:column; gap:3.5mm;}
+.issue{display:flex; gap:5mm; align-items:flex-start;}
+.issue .mark{flex:none; width:11mm; height:11mm; border-radius:2mm; background:var(--orange); color:#fff; font-weight:900; font-size:20pt; display:flex; align-items:center; justify-content:center; margin-top:1.5mm;}
+.issue h3{font-size:24pt;}
+.issue p{font-size:19pt; color:var(--gray-text); line-height:1.55;}
+
+/* 2. 体制 */
+.partners{display:grid; grid-template-columns:repeat(5,1fr); gap:3mm;}
+.partner{background:#fff; border:1px solid var(--line); border-radius:3mm; padding:4mm 2mm; text-align:center;}
+.partner img{width:100%; height:15mm; object-fit:contain;}
+.partner .name{font-size:15.5pt; font-weight:700; color:var(--blue-dark); margin-top:2mm; line-height:1.3; white-space:nowrap;}
+.partner .role{font-size:13pt; color:var(--gray-text); line-height:1.3;}
+.structure-note{font-size:20pt; margin-top:5mm; line-height:1.55;}
+.area{display:flex; align-items:center; gap:4mm; margin-top:5mm; background:var(--blue-soft); border-radius:3mm; padding:3.5mm 6mm; font-size:21pt;}
+.area b{background:var(--blue); color:#fff; font-size:17pt; padding:.5mm 4mm; border-radius:1.5mm;}
+
+/* 3. アプローチ */
+.approach{display:grid; grid-template-columns:122mm 1fr; gap:12mm; align-items:center;}
+.cycle svg{width:100%; height:auto; display:block;}
+.cycle text{font-family:'Noto Sans JP', sans-serif;}
+.dirs{display:flex; flex-direction:column; gap:3.5mm;}
+.dir{display:grid; grid-template-columns:15mm 1fr; gap:5mm; align-items:start; border-left:2mm solid var(--blue); padding-left:5mm;}
+.dir .n{font-size:40pt; font-weight:900; color:var(--blue); line-height:1;}
+.dir h3{font-size:25pt;}
+.dir p{font-size:19.5pt; color:var(--gray-text); line-height:1.55;}
+.lead-copy{font-size:27pt; font-weight:900; color:var(--blue-dark); margin-bottom:5mm;}
+
+/* 4. 取組み */
+.programs{display:grid; grid-template-columns:repeat(3,1fr); gap:8mm;}
+.prog{border-radius:5mm; overflow:hidden; background:#fff; border:1px solid var(--line); display:flex; flex-direction:column;}
+.prog .photo{height:44mm; overflow:hidden;}
+.prog .photo img{width:100%; height:100%; object-fit:cover;}
+.prog .txt{padding:4mm 6mm 5mm; flex:1;}
+.prog .tag{display:inline-block; font-size:15pt; font-weight:700; color:#fff; padding:.5mm 4mm; border-radius:1.5mm;}
+.prog h3{font-size:26pt; margin:2mm 0 1mm;}
+.prog p{font-size:18.5pt; color:var(--gray-text); line-height:1.5;}
+.prog ul{margin-top:3mm; list-style:none;}
+.prog li{font-size:18.5pt; line-height:1.45; padding-left:6mm; position:relative; margin-top:1.5mm;}
+.prog li::before{content:''; position:absolute; left:0; top:.55em; width:3mm; height:3mm; border-radius:50%; background:currentColor; opacity:.9;}
+.prog li span{color:#2A303C;}
+.g{--c:var(--green);} .o{--c:var(--orange);} .b{--c:var(--blue);}
+.prog .tag{background:var(--c);}
+.prog li{color:var(--c);}
+.prog{border-top:3mm solid var(--c);}
+
+/* 5. 事例 */
+.case{display:grid; grid-template-columns:80mm 1fr; gap:6mm; align-items:start;}
+.case .photos{display:grid; grid-template-rows:44mm 44mm; gap:3mm;}
+.case .photos img{width:100%; height:100%; object-fit:cover; border-radius:3mm;}
+.case h3{font-size:26pt;}
+.case p{font-size:18.5pt; line-height:1.55; margin-top:2mm;}
+.facts{display:grid; grid-template-columns:1fr 1fr; gap:2.5mm; margin-top:4mm;}
+.fact{background:#fff; border-radius:2.5mm; padding:2.5mm 4mm; font-size:16pt; line-height:1.35;}
+.fact b{display:block; font-size:13pt; color:var(--gray-text); font-weight:500;}
+.fact strong{font-size:20pt;}
+
+/* 6. 歩み */
+.timeline{list-style:none; position:relative; padding-left:10mm;}
+.timeline::before{content:''; position:absolute; left:2.2mm; top:3mm; bottom:3mm; width:1mm; background:var(--line);}
+.timeline li{position:relative; display:grid; grid-template-columns:30mm 1fr; gap:3mm; font-size:18pt; line-height:1.4; padding:1mm 0;}
+.timeline li::before{content:''; position:absolute; left:-10mm; top:2.9mm; width:5.5mm; height:5.5mm; border-radius:50%; background:#fff; border:1.2mm solid var(--blue);}
+.timeline li.hl::before{background:var(--orange); border-color:var(--orange);}
+.timeline .y{font-weight:900; color:var(--blue-dark); font-size:20pt;}
+.timeline li.hl .y{color:var(--orange);}
+
+/* ---------- Footer ---------- */
+.foot{flex:none; margin-top:10mm; background:var(--blue-soft); padding:8mm var(--pad) calc(var(--bleed) + 12mm); display:grid; grid-template-columns:1fr auto; gap:14mm; align-items:center;}
+.foot h2{font-size:34pt; font-weight:900; display:flex; align-items:center; gap:5mm; margin-bottom:3mm;}
+.foot h2 .no{flex:none; width:17mm; height:17mm; border-radius:50%; background:var(--blue); color:#fff; font-size:25pt; display:flex; align-items:center; justify-content:center;}
+.foot p{font-size:21pt; line-height:1.6;}
+.foot .cta{display:flex; align-items:center; gap:6mm; background:#fff; border-radius:5mm; padding:5mm 6mm;}
+.foot .cta img{width:44mm; height:44mm;}
+.foot .cta .t1{font-size:24pt; font-weight:900; color:var(--blue-dark); line-height:1.35;}
+.foot .cta .t2{font-size:16pt; color:var(--gray-text); line-height:1.5; margin-top:2mm;}
+.foot .cta .org{font-size:17pt; font-weight:700; color:var(--blue-dark); margin-top:3mm; line-height:1.4;}
+</style>
+</head>
+<body>
+
+<header class="head">
+  <span class="eyebrow">研究・活動紹介</span>
+  <h1>住まいを未来へつなぐ。</h1>
+  <p class="sub">空き家にしない、住み継がれるまちへ。</p>
+  <p class="theme">産・官・学・民の連携による、小田急沿線の既存住宅ストック循環モデルの構築</p>
+  <p class="org">小田急沿線既存住宅流通促進協議会</p>
+  <img class="badge" src="../images/hero-award-badge.png" alt="国土交通省 令和8年度 空き家対策モデル事業 採択">
+</header>
+
+<main class="body">
+
+  <!-- 1 背景と課題 ／ 2 目的と体制 -->
+  <div class="row" style="grid-template-columns:1fr 1fr;">
+    <section>
+      <h2 class="sec-title"><span class="no">1</span>背景と課題<span class="en">BACKGROUND</span></h2>
+      <div class="box issues">
+        <div class="issue"><span class="mark">!</span><div>
+          <h3>空き家は「住まなくなってから」では遅い</h3>
+          <p>話し合わないまま相続を迎え、空き家化してから対応が始まる。</p>
+        </div></div>
+        <div class="issue"><span class="mark">!</span><div>
+          <h3>既存住宅の価値が正しく評価されない</h3>
+          <p>状態が見えず、手入れされた住宅も築年数だけで判断されがち。</p>
+        </div></div>
+        <div class="issue"><span class="mark">!</span><div>
+          <h3>課題が多分野にまたがる</h3>
+          <p>不動産・建築・金融・行政など、1つの主体では解決できない。</p>
+        </div></div>
+      </div>
+    </section>
+    <section>
+      <h2 class="sec-title"><span class="no">2</span>目的と体制<span class="en">PURPOSE</span></h2>
+      <div class="box">
+        <p class="structure-note" style="margin-top:0;"><strong>良質な住宅ストックの形成と流通促進</strong>を目的に、各分野の専門性を持つ<strong>5団体</strong>が連携しています。</p>
+        <div class="partners" style="margin-top:5mm;">
+          <div class="partner"><img src="../images/logos/odakyu-fudosan.png" alt=""><div class="name">小田急不動産</div><div class="role">売買・賃貸仲介</div></div>
+          <div class="partner"><img src="../images/logos/odakyu-housing.png" alt=""><div class="name">小田急ハウジング</div><div class="role">住宅管理・保守</div></div>
+          <div class="partner"><img src="../images/logos/ja-bank.png" alt=""><div class="name">JA神奈川県信連</div><div class="role">ローン・農地連携</div></div>
+          <div class="partner"><img src="../images/logos/odakyu.png" alt=""><div class="name">小田急電鉄</div><div class="role">沿線まちづくり</div></div>
+          <div class="partner"><img src="../images/logos/kawasaki-city.png" alt=""><div class="name">川崎市</div><div class="role">地方公共団体</div></div>
+        </div>
+        <div class="area"><b>対象エリア</b>川崎市 麻生区・多摩区</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 3 アプローチ -->
+  <section>
+    <h2 class="sec-title"><span class="no">3</span>アプローチ：住まいの循環モデル<span class="en">APPROACH</span></h2>
+    <div class="approach">
+      <div class="cycle">
+        <svg viewBox="0 0 400 360" role="img" aria-label="学ぶ、相談する、活かす、住み継ぐ の循環">
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9FB3C8"/></marker>
+          </defs>
+          <circle cx="200" cy="180" r="118" fill="none" stroke="#D9E1EB" stroke-width="10"/>
+          <!-- arrows between nodes (clockwise) -->
+          <path d="M248 72 A118 118 0 0 1 306 128" fill="none" stroke="#9FB3C8" stroke-width="5" marker-end="url(#ah)"/>
+          <path d="M306 232 A118 118 0 0 1 248 288" fill="none" stroke="#9FB3C8" stroke-width="5" marker-end="url(#ah)"/>
+          <path d="M152 288 A118 118 0 0 1 94 232" fill="none" stroke="#9FB3C8" stroke-width="5" marker-end="url(#ah)"/>
+          <path d="M94 128 A118 118 0 0 1 152 72" fill="none" stroke="#9FB3C8" stroke-width="5" marker-end="url(#ah)"/>
+          <!-- center -->
+          <circle cx="200" cy="180" r="62" fill="#123B6B"/>
+          <text x="200" y="172" text-anchor="middle" fill="#fff" font-size="17" font-weight="700">官民連携で</text>
+          <text x="200" y="198" text-anchor="middle" fill="#fff" font-size="17" font-weight="700">循環を支える</text>
+          <!-- nodes -->
+          <g font-weight="900" text-anchor="middle">
+            <circle cx="200" cy="62" r="46" fill="#4CA750"/>
+            <text x="200" y="58" fill="#fff" font-size="24">学ぶ</text>
+            <text x="200" y="82" fill="#fff" font-size="12" font-weight="500">学び・啓発</text>
+            <circle cx="318" cy="180" r="46" fill="#F0902E"/>
+            <text x="318" y="176" fill="#fff" font-size="18">相談する</text>
+            <text x="318" y="200" fill="#fff" font-size="12" font-weight="500">相談・予防</text>
+            <circle cx="200" cy="298" r="46" fill="#1D6FBD"/>
+            <text x="200" y="294" fill="#fff" font-size="24">活かす</text>
+            <text x="200" y="318" fill="#fff" font-size="12" font-weight="500">再生・流通</text>
+            <circle cx="82" cy="180" r="46" fill="#7A6FCB"/>
+            <text x="82" y="176" fill="#fff" font-size="18">住み継ぐ</text>
+            <text x="82" y="200" fill="#fff" font-size="12" font-weight="500">次の住まい手へ</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <p class="lead-copy">学び、相談し、活かし、住み継ぐ。</p>
+        <div class="dirs">
+          <div class="dir"><span class="n">1</span><div><h3>良質な住まいを、次の世代へ</h3><p>既存住宅を調査・維持・改修し、その価値が正しく評価される仕組みをつくる。</p></div></div>
+          <div class="dir"><span class="n">2</span><div><h3>空き家になる前から考える</h3><p>住教育・セミナー・相談機会を通じ、家族で話し合う「早めの行動」を促す。</p></div></div>
+          <div class="dir"><span class="n">3</span><div><h3>それぞれの専門性を、地域の力に</h3><p>不動産・建築・金融・行政が連携し、地域に合った解決策を考える。</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 取組み -->
+  <section>
+    <h2 class="sec-title"><span class="no">4</span>主な取組み<span class="en">ACTIVITIES</span></h2>
+    <div class="programs">
+      <div class="prog g">
+        <div class="photo"><img src="../images/workshop01.jpeg" alt=""></div>
+        <div class="txt">
+          <span class="tag">学び・啓発</span>
+          <h3>住まいの未来を考える</h3>
+          <p>地域の暮らしと住まいを学ぶ機会を提供。</p>
+          <ul>
+            <li><span>カードゲームを用いた住教育ワークショップ</span></li>
+            <li><span>マチカドこども大学「住まい学」</span></li>
+            <li><span>相続・空き家対策セミナー</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="prog o">
+        <div class="photo"><img src="../images/program-soudan.jpg" alt="" style="object-position:center 28%;"></div>
+        <div class="txt">
+          <span class="tag">相談・予防</span>
+          <h3>空き家になる前に相談</h3>
+          <p>不安や課題を早い段階で解消できる場をつくる。</p>
+          <ul>
+            <li><span>空き家相談窓口の開設（2023年〜）</span></li>
+            <li><span>新百合ヶ丘駅「住まいと暮らしの情報スポット」</span></li>
+            <li><span>新ゆりフェスティバル・マルシェ出展</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="prog b">
+        <div class="photo"><img src="../images/program-saisei.jpg" alt=""></div>
+        <div class="txt">
+          <span class="tag">再生・流通</span>
+          <h3>安心して住み継げる住宅へ</h3>
+          <p>地域の住宅ストックを再生し、次の住まい手へ。</p>
+          <ul>
+            <li><span>「あんしんストック住宅」の認定・再販</span></li>
+            <li><span>インスペクション・耐震診断</span></li>
+            <li><span>断熱・バリアフリーリフォーム</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 事例 ／ 6 歩み -->
+  <div class="row" style="grid-template-columns:1.12fr 1fr;">
+    <section>
+      <h2 class="sec-title"><span class="no">5</span>事例：あんしんストック住宅<span class="en">CASE</span></h2>
+      <div class="box case">
+        <div class="photos">
+          <img src="../images/anshin-stock01.jpeg" alt="">
+          <img src="../images/anshin-stock03.jpeg" alt="">
+        </div>
+        <div>
+          <h3>既存戸建を「見える化」して再販</h3>
+          <p>インスペクション、調査に基づくリフォーム、瑕疵保険、維持保全計画、住宅履歴管理を組み合わせた<strong>買取再販型</strong>のスキームを協議会で開発しました。</p>
+          <div class="facts">
+            <div class="fact"><b>第1号試行</b><strong>2020年11月</strong></div>
+            <div class="fact"><b>立地</b><strong>五月台駅 徒歩4分</strong></div>
+            <div class="fact"><b>物件</b><strong>築18年の戸建</strong></div>
+            <div class="fact"><b>主な改修</b>外壁屋根塗装・防水・内装設備・換気性能向上</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="sec-title"><span class="no">6</span>これまでの歩み<span class="en">HISTORY</span></h2>
+      <ul class="timeline">
+        <li class="hl"><span class="y">2017</span><span>協議会発足／国交省「良質ストック事業」採択（〜2023年度まで毎年）</span></li>
+        <li><span class="y">2018</span><span>新百合ヶ丘駅に「住まいと暮らしの情報スポット」開設</span></li>
+        <li><span class="y">2020</span><span>住まいの冊子を作成／あんしんストック住宅 試行開始</span></li>
+        <li><span class="y">2021</span><span>相続・認知症対策セミナー開催</span></li>
+        <li><span class="y">2022</span><span>新ゆりフェスティバル・マルシェ出展</span></li>
+        <li><span class="y">2023</span><span>空き家相談窓口を開設</span></li>
+        <li><span class="y">2025</span><span>マチカドこども大学「住まい学」／住教育ワークショップ</span></li>
+        <li class="hl"><span class="y">2026</span><span>国交省「空き家対策モデル事業」採択</span></li>
+      </ul>
+    </section>
+  </div>
+
+</main>
+
+<!-- 7 今後の展望 ＋ 問い合わせ -->
+<footer class="foot">
+  <div>
+    <h2><span class="no">7</span>今後の展望</h2>
+    <p>令和8年度「空き家対策モデル事業」として、学び・相談・再生流通を一体的に推進。<br>住まいのこれからを考える、家族で話す、専門家に相談する ── 一つひとつの行動を後押しし、<strong>住み継がれる住まいと持続可能なまち</strong>の実現を目指します。</p>
+  </div>
+  <div class="cta">
+    <img src="qr-contact.svg" alt="お問い合わせフォームのQRコード">
+    <div>
+      <p class="t1">住まいのご相談・<br>お問い合わせはこちら</p>
+      <p class="t2">売買・賃貸・買取など<br>空き家に関するご相談を承ります</p>
+      <p class="org">小田急沿線既存住宅<br>流通促進協議会</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
