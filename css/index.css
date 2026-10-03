@@ -75,7 +75,8 @@
 .results-slider{overflow:hidden; margin:28px 0;}
 .results-slider-track{display:flex; align-items:center; gap:16px; width:max-content; animation:resultsScroll 36s linear infinite;}
 .results-slider:hover .results-slider-track{animation-play-state:paused;}
-.results-slider-track img{display:block; height:220px; width:auto; border-radius:14px; box-shadow:var(--shadow); flex-shrink:0;}
+.results-slider-track a{display:block; flex-shrink:0; border-radius:14px; box-shadow:var(--shadow); overflow:hidden; line-height:0;}
+.results-slider-track img{display:block; height:220px; width:auto;}
 @keyframes resultsScroll{
   0%{transform:translateX(0);}
   100%{transform:translateX(-50%);}
