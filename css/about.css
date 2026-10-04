@@ -51,7 +51,7 @@
 .about-cycle-text{max-width:70ch; margin:0 auto 28px; text-align:center;}
 .about-cycle-text p{font-size:14.5px; color:var(--gray-text); line-height:1.9;}
 .cycle-panel{background:#fff; border-radius:24px; padding:36px 30px; text-align:center;}
-.cycle-panel img{max-width:640px; width:100%; height:auto; margin:0 auto; display:block;}
+.cycle-panel img{max-width:832px; width:100%; height:auto; margin:0 auto; display:block;}
 
 /* ===== Closing message ===== */
 .about-message{background:var(--bg-soft); text-align:center; padding:44px 0;}
