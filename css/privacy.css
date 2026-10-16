@@ -33,3 +33,7 @@
 .privacy-meta-box p{font-size:13.5px; margin-bottom:0;}
 
 .privacy-date{text-align:right; font-size:13px; color:var(--gray-text); margin-top:36px;}
+
+@media (max-width:520px){
+  .privacy-page-header h1{font-size:18px;}
+}
